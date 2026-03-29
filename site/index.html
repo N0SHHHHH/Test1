@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bike Shop</title>
+    <title>Food Menu</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -11,32 +11,99 @@
             padding: 20px;
             background-color: #f5f5f5;
         }
-        h1 {
-            color: #333;
-            text-align: center;
-        }
-        .content {
+        .menu-container {
             max-width: 800px;
             margin: 0 auto;
             background-color: white;
             padding: 20px;
             border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .menu-section {
+            margin-bottom: 30px;
+        }
+        .section-title {
+            font-size: 20px;
+            color: #555;
+            border-bottom: 2px solid #ff6b35;
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+        }
+        .menu-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 1px dotted #ddd;
+        }
+        .item-name {
+            font-weight: bold;
+            color: #333;
+        }
+        .item-description {
+            color: #777;
+            font-size: 14px;
+        }
+        .item-price {
+            color: #ff6b35;
+            font-weight: bold;
         }
     </style>
 </head>
 <body>
-    <h1>Welcome to Cycle Hub</h1>
-    <div class="content">
-        <h2>High-Quality Bikes for Every Rider</h2>
-        <p>Discover our premium collection of bicycles, from mountain bikes to road bikes. We offer top brands and affordable prices.</p>
-        <h3>Featured Products</h3>
-        <ul>
-            <li>Mountain Bikes - Perfect for off-road adventures</li>
-            <li>Road Bikes - Lightweight and fast</li>
-            <li>Hybrid Bikes - Great for commuting</li>
-        </ul>
-        <p>Visit us today and find your perfect ride!</p>
+    <div class="menu-container">
+        <h1>🍽️ Food Menu</h1>
+        
+        <div class="menu-section">
+            <div class="section-title">Appetizers</div>
+            <div class="menu-item">
+                <div>
+                    <div class="item-name">Bruschetta</div>
+                    <div class="item-description">Toasted bread with tomato and basil</div>
+                </div>
+                <div class="item-price">$8.99</div>
+            </div>
+            <div class="menu-item">
+                <div>
+                    <div class="item-name">Calamari</div>
+                    <div class="item-description">Fried squid with marinara sauce</div>
+                </div>
+                <div class="item-price">$10.99</div>
+            </div>
+        </div>
+
+        <div class="menu-section">
+            <div class="section-title">Main Courses</div>
+            <div class="menu-item">
+                <div>
+                    <div class="item-name">Pasta Carbonara</div>
+                    <div class="item-description">Creamy pasta with bacon and cheese</div>
+                </div>
+                <div class="item-price">$14.99</div>
+            </div>
+            <div class="menu-item">
+                <div>
+                    <div class="item-name">Grilled Salmon</div>
+                    <div class="item-description">Fresh salmon with seasonal vegetables</div>
+                </div>
+                <div class="item-price">$18.99</div>
+            </div>
+        </div>
+
+        <div class="menu-section">
+            <div class="section-title">Desserts</div>
+            <div class="menu-item">
+                <div>
+                    <div class="item-name">Tiramisu</div>
+                    <div class="item-description">Classic Italian dessert with mascarpone</div>
+                </div>
+                <div class="item-price">$7.99</div>
+            </div>
+        </div>
     </div>
 </body>
 </html>
